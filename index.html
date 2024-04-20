@@ -36,8 +36,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-    <header class="main_header fixed-top">
+  <body id="myBody">
+    <header id="headerT" class="main_header fixed-top">
       <!-- place navbar here -->
       <div class="container">
         <nav class="header_fix navbar navbar-expand-lg d-flex">
@@ -88,12 +88,12 @@
                   Pages
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
+                  <li class="nav-item">
                     <a class="dropdown-item" href="./pages/Blog_page.html"
                       >Blog Posts</a
                     >
                   </li>
-                  <li>
+                  <li class="nav-item">
                     <a class="dropdown-item" href="./pages/Landing_page.html"
                       >Landing page
                     </a>
@@ -104,14 +104,15 @@
                 <a class="nav-link" href="./pages/Contact_page.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a id="search" class="btn searchbtn" type="submit">
+                <a id="search" class="searchbtn" type="submit" title="Search">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
               </li>
               <!-- light-dark theme -->
               <li class="nav-item">
-                <a id="search" class="btn searchbtn" type="submit">
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                <a class="btn" id="switchButton">
+                  <i class="far fa-moon"></i>
+                  <i class="far fa-sun"></i>
                 </a>
               </li>
             </ul>
@@ -122,6 +123,87 @@
     <main></main>
     <footer>
       <!-- place footer here -->
+      <div class="container-fluid">
+        <div class="footer_content container">
+          <div class="row left">
+            <div class="col-lg-6 col-md-5 mt-5">
+              <ul class="footer_contact">
+                <li>
+                  <h3>Contact information</h3>
+                </li>
+                <li>
+                  <p>
+                    <strong>Address :</strong> #135 block, Barnard St. Brooklyn,
+                    London 10036, UK
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Phone :</strong>
+                    <a href="tel:+(12)234-11-24">+(12)234-11-24</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Email :</strong>
+                    <a href="mailto:example@mail.com">example@mail.com</a>
+                  </p>
+                </li>
+              </ul>
+              <ul class="social_icon">
+                <li>
+                  <a href="https://www.facebook.com/w3layouts/">
+                    <i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/W3layouts">
+                    <i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://dribbble.com/w3layouts"
+                    ><i class="fa-brands fa-dribbble"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://myaccount.google.com/profile?pli=1"
+                    ><i class="fa-brands fa-google"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-7 mt-5">
+              <div class="row right">
+                <div class="col-sm-4 col-6">
+                  <ul>
+                    <li><h3>Archives</h3></li>
+                    <li><a href="#">December 2020</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul>
+                    <li><h3>Categories</h3></li>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Pets</a></li>
+                    <li><a href="#">Pets care</a></li>
+                    <li><a href="#">Uncategorized</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul>
+                    <li><h3>Meta</h3></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Entries feed</a></li>
+                    <li><a href="#"> Comments feed</a></li>
+                    <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -135,5 +217,11 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark"),
+          document.getElementById("headerT").classList.toggle("dark");
+      };
+    </script>
   </body>
 </html>

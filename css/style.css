@@ -9,7 +9,7 @@ body a {
 }
 /* header */
 .header_fix {
-  background-color: white;
+  background-color: transparent;
   height: 90px;
   display: grid;
   align-items: center;
@@ -18,7 +18,7 @@ body a {
 .header_fix .navbar-brand {
   font-size: 34px;
   font-weight: 600;
-  color: #249f4f;
+  color: #249f4f !important;
 }
 .main_header .container {
   width: 1200px;
@@ -41,9 +41,29 @@ body a {
   color: black;
   position: relative;
   text-transform: capitalize;
+  text-align: center;
 }
 .navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
   color: #249f4f;
+}
+.navbar-expand-lg .navbar-nav .nav-item .nav-link::before,
+a.dropdown-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 13px;
+  width: 0;
+  height: 1px;
+  background-color: green;
+  transition: all 0.5s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover,
+a.a.dropdown-item:hover {
+  color: green;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::before,
+a.dropdown-item:hover::before {
+  width: 100%;
 }
 li .searchbtn {
   background-color: rgba(147, 107, 232, 0.05);
@@ -53,6 +73,91 @@ li .searchbtn {
   line-height: 45px;
   border-radius: 45px;
   text-align: center;
-  color: #249f4f;
+  color: #249f4f !important;
   padding: 0;
+  vertical-align: middle;
+  transition: all 0.5s;
+}
+li .searchbtn:hover {
+  background-color: #249f4f;
+  color: white !important;
+}
+.nav-item .btn {
+  padding-top: 12px;
+}
+
+/* Light theme */
+#myBody {
+  background-color: white;
+  transition: all 0.5s;
+}
+#switchButton {
+  background-color: white;
+  /* border: 1px solid black; */
+}
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* Dark Theme*/
+.dark#myBody {
+  background-color: black;
+}
+.dark#myBody a {
+  color: white;
+}
+.dark#headerT {
+  background-color: #151515;
+}
+.dark #switchButton {
+  background-color: black;
+  /* border: 1px solid white; */
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+
+/* footer */
+footer {
+  margin: 100px 0;
+  background-color: black;
+  color: #696969;
+}
+
+footer h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #696969;
+  font-size: 16px;
+  line-height: 28px;
+}
+footer .footer_content {
+  display: flex;
+}
+footer .footer_content .social_icon li {
+  display: inline;
+  padding-right: 5px;
+}
+footer .footer_content .social_icon li i {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 3px;
 }
