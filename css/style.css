@@ -8,6 +8,12 @@ body a {
   font-family: "Jost", sans-serif;
 }
 /* header */
+header {
+  position: fixed;
+  background-color: #fff;
+  width: 1519px;
+  height: 80px;
+}
 .header_fix {
   background-color: transparent;
   height: 90px;
@@ -128,7 +134,7 @@ li .searchbtn:hover {
 /* footer */
 footer {
   margin: 100px 0;
-  background-color: black;
+  background-color: #151515;
   color: #696969;
 }
 
@@ -148,9 +154,21 @@ footer ul li a {
   color: #696969;
   font-size: 16px;
   line-height: 28px;
+  transition: all 0.5s;
+}
+footer .row_left ul {
+  padding: 0;
 }
 footer .footer_content {
   display: flex;
+  width: 1180px;
+  height: 280px;
+  margin: 0 159.6px;
+  padding: 16px 25px;
+}
+footer .footer_content a:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 footer .footer_content .social_icon li {
   display: inline;
@@ -160,4 +178,24 @@ footer .footer_content .social_icon li i {
   font-size: 16px;
   padding: 0;
   margin-top: 3px;
+}
+footer .row_left {
+  width: 100%;
+}
+
+footer .footer_copyright a {
+  text-decoration: none;
+  color: red;
+  font-size: 16px;
+  line-height: 28px;
+  transition: all 0.5s;
+  opacity: 0.9;
+}
+footer .footer_copyright a:hover {
+  text-decoration: underline;
+}
+footer .footer_copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.114);
+  padding: 24px;
+  margin-top: 48px;
 }
