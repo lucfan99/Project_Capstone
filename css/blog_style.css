@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header_section {
+  background-image: url(../img/banner4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  padding: 1em 0;
+  display: grid;
+  align-items: center;
+  margin-top: 100px;
+}
+.header_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  z-index: -1;
+  background-color: #0c0c0c;
+  opacity: 0.6;
+}
+.container-fluid .headsection_content {
+  color: white;
+}
+.container-fluid .headsection_content h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.container-fluid .headsection_content a,
+.container-fluid .headsection_content a:hover {
+  color: #189a46;
+}
+/* Blog Post */
+.blog {
+  background-color: rgba(147, 107, 232, 0.05);
+}
+.blog .blog_content .blog_item {
+  margin-bottom: 24px;
+}
+.blog .blog_content .blog_item .card {
+  transition: all 0.5s;
+  border: none;
+}
+.blog .blog_content .blog_item .card:hover {
+  transform: translateY(-0.5rem);
+  transition: all 0.3s ease;
+}
+.blog .blog_content .blog_item .card:hover .card-body {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+.blog .blog_content img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card-body a {
+  color: #000c04;
+}
+.card-body .item_title {
+  display: block;
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-body h4 a:hover {
+  color: #189a46;
+}
+
+.card-body .meta a {
+  display: inline;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.card-body .meta span {
+  color: #999;
+  font-size: 14px;
+  margin: 0;
+}
+/* panigation */
+.page-item .page-link {
+  padding: 0;
+  margin: 0 12px;
+  background: none;
+  color: #000c04;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+.page-item .page-link:hover {
+  color: #189a46;
+}
+.page-item.active .page-link {
+  color: #189a46;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact page</title>
+    <title>Blogs page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -33,6 +33,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- main CSS -->
+    <link rel="stylesheet" href="../css/blog_style.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
@@ -67,7 +68,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./About_page.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./Services_page.html">Services</a>
@@ -75,7 +76,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="./Gallery_page.html">Gallery</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown active">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -98,7 +99,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="./Contact_page.html">Contact</a>
               </li>
               <li class="nav-item">
@@ -160,7 +161,68 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="header_section py-4 py-sm-5">
+        <div class="container-fluid py-2">
+          <div class="headsection_content text-center align-items-center">
+            <h2>Blog</h2>
+            <p><a href="../index.html">Home</a></p>
+          </div>
+        </div>
+      </section>
+      <!-- blog post -->
+      <section class="blog py-5">
+        <div class="container py-lg-4 py-md-3">
+          <div class="blog_title text-center mx-auto">
+            <h6 class="sub_title mb-2">BLOG POSTS</h6>
+            <h3 class="sub_2nd mb-5">
+              Highest Quality Care For Pets You'll Love
+            </h3>
+          </div>
+          <div class="blog_content row">
+            <div class="blog_item col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  src="../img/banner2.jpg"
+                  class="card-img-top"
+                  alt="postitem 1"
+                />
+                <div class="card-body">
+                  <h4>
+                    <a class="item_title" href="#url">Hello World!</a>
+                  </h4>
+                  <div class="meta">
+                    <a
+                      href="https://wp.w3layouts.com/poochcare/author/w3layouts/"
+                      >W3Layouts
+                    </a>
+                    -
+                    <span>December 30, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- panigation -->
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="../pages/Blog_page.html">Prev</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="../pages/Blog_page.html">1</a>
+              </li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="../pages/blog_2.html">2</a>
+              </li>
+              <!-- <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
     <footer>
       <!-- place footer here -->
       <div class="container-fluid">

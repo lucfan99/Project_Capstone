@@ -106,6 +106,42 @@ li .searchbtn:hover {
   background-color: #249f4f;
   color: white !important;
 }
+.modal-body-input .search_text {
+  height: 60px;
+  font-size: 16px;
+  opacity: 1;
+  background-color: white;
+  flex-basis: 80%;
+  padding-left: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.modal-body-input button:hover {
+  opacity: 0.8;
+}
+.modal-body-input form {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  text-align: center;
+}
+.modal-body-input button {
+  opacity: 1;
+  color: white;
+  background-color: #189a46;
+  flex-basis: 20%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.modal-backdrop {
+  position: relative;
+}
+.search_overplay {
+  position: relative;
+  margin: 0 auto;
+  padding: 15px;
+  top: 50%;
+  max-width: 600px;
+}
 .nav-item .btn {
   padding-top: 12px;
 }
@@ -451,6 +487,7 @@ p {
   color: #999;
   font-weight: 400;
 }
+
 .ourplans .active .our_top {
   padding: 3em 2.5em 0.5em;
   background-color: #189a46;
@@ -533,10 +570,45 @@ ul {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
-#small_dialog {
-  max-width: 750px;
-  margin: 40px auto;
+.modal.fade {
+  background-color: #171717;
+  padding-top: 150px;
+  opacity: 0.9;
+}
+.modal.fade.show {
+  /* position: sticky; */
+}
+main .modal_dialog {
+  /* max-width: 750px;*/
+  /* margin: 40px auto; */
+}
+.btn_close {
+  position: absolute;
+  right: -120px;
+  top: -50px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+}
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+.modal-body {
   position: relative;
+  width: 80%;
+  padding: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+}
+.modal-body iframe {
+  width: 750px;
+  height: 350px;
+  display: block;
 }
 /* .video-hide {
   display: none;
@@ -748,8 +820,12 @@ footer .footer_copyright {
   font-size: 18px;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.5s;
 }
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;
+}
+.backtotop:hover {
+  transform: translateY(-10px);
 }

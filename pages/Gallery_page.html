@@ -102,9 +102,51 @@
                 <a class="nav-link" href="./Contact_page.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a id="search" class="searchbtn" type="submit">
+                <a
+                  id="search"
+                  class="searchbtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#searchpopup"
+                  type="button"
+                  title="Search"
+                >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
+                <div
+                  class="modal fade"
+                  id="searchpopup"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <button
+                        type="button"
+                        class="btn_close text-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <img src="./img/close.png" />
+                      </button>
+                      <div class="modal-body-input">
+                        <form
+                          class="d-sm-flex justify-content-between"
+                          action=""
+                        >
+                          <input
+                            class="search_text"
+                            type="search"
+                            placeholder="Search..."
+                            required="required"
+                            autofocus
+                          />
+                          <button type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
               <!-- light-dark theme -->
               <li class="nav-item">

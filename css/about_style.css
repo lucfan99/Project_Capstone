@@ -37,9 +37,14 @@
 .container-fluid .headsection_content a:hover {
   color: #189a46;
 }
-.container-fluid .headsection_content span {
+.container-fluid .headsection_content span,
+.breadcrumb-item {
   color: #fff;
 }
+/* .breadcrumb-item::before {
+  float: left;
+  color: white;
+} */
 /* About us */
 .aboutus .about_left h4 {
   font-size: 22px;
@@ -140,6 +145,9 @@
 }
 .top img {
   transition: all 0.5s;
+}
+.team .top {
+  overflow: hidden;
 }
 .team_item:hover .top img {
   transform: scale(1.1);
