@@ -47,7 +47,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
     <!-- main CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="" />
@@ -125,10 +125,53 @@
                 <a class="nav-link" href="./pages/Contact_page.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a id="search" class="searchbtn" type="submit" title="Search">
+                <a
+                  id="search"
+                  class="searchbtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#searchpopup"
+                  type="button"
+                  title="Search"
+                >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
+                <div
+                  class="modal fade"
+                  id="searchpopup"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <button
+                        type="button"
+                        class="btn_close text-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        x
+                      </button>
+                      <div class="modal-body-input">
+                        <form
+                          class="d-sm-flex justify-content-between"
+                          action=""
+                        >
+                          <input
+                            class="search_text"
+                            type="search"
+                            placeholder="Search..."
+                            required="required"
+                            autofocus
+                          />
+                          <button type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
+
               <!-- light-dark theme -->
               <li class="nav-item">
                 <a class="btn" id="switchButton">
@@ -575,20 +618,43 @@
                   alt="video_popup"
                 />
                 <a
-                  href="#small_dialog"
+                  type="button"
                   class="play_btn text-center position-absolute"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 >
                   <span class="play-video-icon">
                     <i class="fa-solid fa-play"></i>
                   </span>
                 </a>
-                <div id="small_dialog" class="video-hide">
-                  <iframe
-                    src="https://player.vimeo.com/video/101587706"
-                    frameborder="0"
-                    allow="autoplay; fullscreen"
-                    allowfullscreen=""
-                  ></iframe>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <button
+                        type="button"
+                        class="btn_close text-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <img src="./img/close.png" />
+                      </button>
+                      <div class="modal-body container">
+                        <iframe
+                          src="https://player.vimeo.com/video/101587706"
+                          frameborder="0"
+                          allow="autoplay; fullscreen"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -901,6 +967,19 @@
     <script src="./js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
     <script>
       $(".counter").countUp();
+    </script>
+
+    <!-- play vimeo -->
+    <script>
+      $("#small_dialog").click(function () {
+        var src = "https://player.vimeo.com/video/101587706";
+        $("#myModal").modal("show");
+        $("#myModal iframe").attr("src", src);
+      });
+
+      $("#myModal button").click(function () {
+        $("#myModal iframe").removeAttr("src");
+      });
     </script>
     <!-- owlcarousel -->
     <script
