@@ -1,0 +1,112 @@
+.banner {
+  background-image: url(../img/banner4.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 0;
+  padding: 1em 0;
+  position: relative;
+}
+.banner h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.banner_title {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner a {
+  color: #189a46;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+.banner_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Màu đen hoặc bất kỳ màu nào bạn muốn cho overlay */
+  opacity: 0.5;
+  z-index: -1;
+}
+.gallery_text {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.view_gallery .gallery_text h6 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: #f53626;
+}
+.view_gallery .gallery_text h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+.gallery_show {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 100px;
+}
+.gallery_show img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.show_overlay {
+  position: relative;
+  overflow: hidden;
+}
+.show_overlay::before {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-25deg);
+}
+.show_overlay:hover::before {
+  animation: name 0.5s;
+}
+@keyframes name {
+  100% {
+    left: 100%;
+  }
+}

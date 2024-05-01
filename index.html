@@ -58,11 +58,13 @@
       <!-- place navbar here -->
       <div class="container">
         <nav class="header_fix navbar navbar-expand-lg d-flex">
-          <h1>
-            <a class="navbar-brand text-center" href="./index.html">
-              Pooch Care
-            </a>
-          </h1>
+          <div class="home_button">
+            <h1>
+              <a class="navbar-brand text-center" href="./index.html">
+                Pooch Care
+              </a>
+            </h1>
+          </div>
 
           <button
             class="navbar-toggler"
@@ -73,7 +75,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"> </span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -171,15 +173,16 @@
                   </div>
                 </div>
               </li>
-
-              <!-- light-dark theme -->
-              <li class="nav-item">
-                <a class="btn" id="switchButton">
-                  <i class="far fa-moon"></i>
-                  <i class="far fa-sun"></i>
-                </a>
-              </li>
             </ul>
+          </div>
+          <!-- light-dark theme -->
+          <div class="mod_position">
+            <div class="theme_switch">
+              <a class="btn" id="switchButton">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -228,7 +231,7 @@
               <div class="carousel-item active" data-bs-interval="2000">
                 <img
                   src="./img/banner1.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 h-100"
                   alt="pet01"
                 />
                 <div
@@ -254,7 +257,7 @@
               <div class="carousel-item" data-bs-interval="2000">
                 <img
                   src="./img/banner2.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 h-100"
                   alt="pet02"
                 />
                 <div
@@ -372,7 +375,7 @@
       <section class="service gy-5">
         <div class="container pt-lg-5 pt-md-4">
           <div class="row justify-content-center">
-            <div class="col-4 grid-feature">
+            <div class="col-lg-4 col-sm-6 grid-feature">
               <div class="item_area">
                 <div class="icon">
                   <i class="fa-solid .svg-inline--fa fa-snowflake"></i>
@@ -387,7 +390,7 @@
                 <a class="read" href="#url">Read More</a>
               </div>
             </div>
-            <div class="col-4 grid-feature">
+            <div class="col-lg-4 col-sm-6 grid-feature">
               <div class="item_area">
                 <div class="icon">
                   <i class="fa-solid fa-icon fa-utensils"></i>
@@ -401,7 +404,7 @@
                 <a class="read" href="#url">Read More</a>
               </div>
             </div>
-            <div class="col-4 grid-feature">
+            <div class="col-lg-4 col-sm-6 grid-feature">
               <div class="item_area">
                 <div class="icon">
                   <i class="fa-solid fa-icon fa-hands"></i>
@@ -416,7 +419,7 @@
               </div>
             </div>
 
-            <div class="col-4 grid-feature">
+            <div class="col-lg-4 col-sm-6 grid-feature">
               <div class="item_area">
                 <div class="icon">
                   <i class="fa-solid fa-icon fa-sitemap"></i>
@@ -430,7 +433,7 @@
                 <a class="read" href="#url">Read More</a>
               </div>
             </div>
-            <div class="col-4 grid-feature">
+            <div class="col-lg-4 col-sm-6 grid-feature">
               <div class="item_area">
                 <div class="icon">
                   <i class="fa-solid fa-icon fa-shower"></i>
@@ -444,7 +447,7 @@
                 <a class="read" href="#url">Read More</a>
               </div>
             </div>
-            <div class="col-4 grid-feature">
+            <div class="col-lg-4 col-sm-6 grid-feature">
               <div class="item_area">
                 <div class="icon">
                   <i class="fa-solid fa-icon fa-user-doctor"></i>
@@ -832,10 +835,10 @@
     </main>
     <footer>
       <!-- place footer here -->
-      <div class="container-fluid">
+      <div class="container py-lg-5">
         <div class="footer_content">
           <div class="row row_left">
-            <div class="col-6 mt-5">
+            <div class="col-lg-6 col-md-5 mt-5">
               <ul class="footer_contact">
                 <li>
                   <h3>Contact information</h3>
@@ -859,7 +862,7 @@
                   </p>
                 </li>
               </ul>
-              <ul class="social_icon">
+              <ul class="social_icon mt-3">
                 <li>
                   <a href="https://www.facebook.com/w3layouts/">
                     <i class="fa-brands fa-facebook-f"></i
@@ -882,15 +885,15 @@
                 </li>
               </ul>
             </div>
-            <div class="col-6 mt-5">
+            <div class="col-lg-6 col-md-7">
               <div class="row row_right">
-                <div class="col-4">
+                <div class="col-sm-4 col-6 mt-5">
                   <ul>
                     <li><h3>Archives</h3></li>
                     <li><a href="#">December 2020</a></li>
                   </ul>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 col-6 mt-5">
                   <ul>
                     <li><h3>Categories</h3></li>
                     <li><a href="#">Animals</a></li>
@@ -899,7 +902,7 @@
                     <li><a href="#">Uncategorized</a></li>
                   </ul>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 mt-5">
                   <ul>
                     <li><h3>Meta</h3></li>
                     <li><a href="#">Log in</a></li>
@@ -912,7 +915,7 @@
             </div>
           </div>
         </div>
-        <div class="footer_copyright container-fluid">
+        <div class="footer_copyright container-fluid py-lg-4 py-3 mt-5">
           <p class="text-center">
             © 2024 All Rights Reserved by
             <a href="https://w3layouts.com/">W3Layouts.</a>

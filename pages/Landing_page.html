@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Capstone</title>
+    <title>Landing Page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -79,10 +79,9 @@
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="../index.html"
-                  >Home</a
-                >
+                  >Home</>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/About_page.html">About</a>
@@ -108,17 +107,13 @@
                   Pages
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link dropdown-item"
-                      href="../pages/Blog_page.html"
+                  <li>
+                    <a class="dropdown-item" href="../pages/Blog_page.html"
                       >Blog Posts</a
                     >
                   </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link dropdown-item"
-                      href="../pages/Landing_page.html"
+                  <li>
+                    <a class="dropdown-item" href="../pages/Landing_page.html"
                       >Landing page
                     </a>
                   </li>
@@ -176,15 +171,15 @@
                   </div>
                 </div>
               </li>
-
-              <!-- light-dark theme -->
-              <li class="nav-item">
-                <a class="btn" id="switchButton">
-                  <i class="far fa-moon"></i>
-                  <i class="far fa-sun"></i>
-                </a>
-              </li>
             </ul>
+          </div>
+          <div class="mod_position">
+            <div class="theme_switch">
+              <a class="btn" id="switchButton">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -233,7 +228,7 @@
               <div class="carousel-item active" data-bs-interval="2000">
                 <img
                   src="../img/banner1.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 h-100"
                   alt="pet01"
                 />
                 <div
@@ -259,7 +254,7 @@
               <div class="carousel-item" data-bs-interval="2000">
                 <img
                   src="../img/banner2.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 h-100"
                   alt="pet02"
                 />
                 <div
@@ -285,7 +280,7 @@
               <div class="carousel-item" data-bs-interval="2000">
                 <img
                   src="../img/banner1.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 h-100"
                   alt="pet03"
                 />
                 <div
@@ -308,7 +303,7 @@
               <div class="carousel-item" data-bs-interval="2000">
                 <img
                   src="../img/banner1.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 h-100"
                   alt="pet04"
                 />
                 <div
@@ -1003,7 +998,7 @@
                     cols="30"
                     rows="10"
                   ></textarea>
-                  <button type="submit" class="btn btn-primary mt-4 btn-style">
+                  <button type="submit" class="btn btn-primary mt-4 btn-send">
                     Send Message
                   </button>
                 </form>
@@ -1058,10 +1053,10 @@
     </main>
     <footer>
       <!-- place footer here -->
-      <div class="container-fluid">
+      <div class="container py-lg-5">
         <div class="footer_content">
           <div class="row row_left">
-            <div class="col-6 mt-5">
+            <div class="col-lg-6 col-md-5 mt-5">
               <ul class="footer_contact">
                 <li>
                   <h3>Contact information</h3>
@@ -1085,7 +1080,7 @@
                   </p>
                 </li>
               </ul>
-              <ul class="social_icon">
+              <ul class="social_icon mt-3">
                 <li>
                   <a href="https://www.facebook.com/w3layouts/">
                     <i class="fa-brands fa-facebook-f"></i
@@ -1108,15 +1103,15 @@
                 </li>
               </ul>
             </div>
-            <div class="col-6 mt-5">
+            <div class="col-lg-6 col-md-7">
               <div class="row row_right">
-                <div class="col-4">
+                <div class="col-sm-4 col-6 mt-5">
                   <ul>
                     <li><h3>Archives</h3></li>
                     <li><a href="#">December 2020</a></li>
                   </ul>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 col-6 mt-5">
                   <ul>
                     <li><h3>Categories</h3></li>
                     <li><a href="#">Animals</a></li>
@@ -1125,7 +1120,7 @@
                     <li><a href="#">Uncategorized</a></li>
                   </ul>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 mt-5">
                   <ul>
                     <li><h3>Meta</h3></li>
                     <li><a href="#">Log in</a></li>
@@ -1138,7 +1133,7 @@
             </div>
           </div>
         </div>
-        <div class="footer_copyright container-fluid">
+        <div class="footer_copyright container-fluid py-lg-4 py-3 mt-5">
           <p class="text-center">
             © 2024 All Rights Reserved by
             <a href="https://w3layouts.com/">W3Layouts.</a>
