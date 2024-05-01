@@ -1,0 +1,108 @@
+.banner {
+  background-image: url(../img/banner4.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 0;
+  padding: 1em 0;
+  position: relative;
+}
+.banner h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.banner_title {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner a {
+  color: #189a46;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.container {
+  max-width: 1200px;
+}
+.banner_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Màu đen hoặc bất kỳ màu nào bạn muốn cho overlay */
+  opacity: 0.5;
+  z-index: -1;
+}
+.content_dogwalking {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 175px;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+
+.dogwalking_img a img {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 555px;
+}
+.content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.dogwalking_text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+.dogwalking_text h6 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: red;
+}
+.dogwalking_text h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+.dogwalking_text p {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #696969;
+  font-family: "Jost", sans-serif;
+}
+.dogwalking_text a {
+  display: inline;
+  text-align: left;
+  font-size: 17px;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  margin-top: 20px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid #189a46;
+  width: 15.5%;
+}

@@ -1,0 +1,151 @@
+.banner {
+  background-image: url(../img/banner4.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 0;
+  padding: 1em 0;
+  position: relative;
+}
+.banner h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.banner_title {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner a {
+  color: #189a46;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.container {
+  max-width: 1200px;
+}
+.banner_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Màu đen hoặc bất kỳ màu nào bạn muốn cho overlay */
+  opacity: 0.5;
+  z-index: -1;
+}
+.contact .contact_title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin-top: 70px;
+}
+.contact_title h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f53626;
+  line-height: 2em;
+}
+.contact_title h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+.contact_section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  margin: 0px 180px;
+}
+.text_name_email {
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: 1fr 1fr;
+}
+.contact_text input {
+  width: 100%;
+  font-size: 16px;
+  height: 55px;
+  color: #252b33;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: #f9f7fe;
+  padding: 0px 16px;
+
+  margin-bottom: 20px;
+}
+.contact_text textarea {
+  width: 100%;
+  font-size: 16px;
+  height: 55px;
+  color: #252b33;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: #f9f7fe;
+  padding: 12px 16px;
+  min-height: 140px;
+}
+.contact_text {
+  position: relative;
+  width: 100%;
+}
+.contact_text button {
+  font-size: 18px;
+  padding: 12px 35px;
+  line-height: 28px;
+  border-radius: 10px;
+  background-color: #189a46;
+  border: 1px solid white;
+  color: white;
+  right: 0;
+  bottom: 0;
+  float: right;
+  margin: 24px 0px 0px;
+}
+.detail_address {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 30px auto;
+}
+.address_icon {
+  text-align: center;
+  color: #189a46;
+  font-size: 20px;
+}
+.address_text h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.address_text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  margin-top: 3px;
+}
+.contact_map iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
