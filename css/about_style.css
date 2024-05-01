@@ -95,9 +95,6 @@
   margin-top: 40px;
 }
 /* care service */
-.careservice .care_left {
-  text-align: right;
-}
 
 .careservice .right_item h6 {
   margin-bottom: 6px;
@@ -168,4 +165,33 @@
 .social a:hover {
   background-color: #189a46;
   color: #fff;
+}
+@media (max-width: 992px) {
+  .care_right {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .right_item {
+    text-align: center;
+  }
+}
+@media (max-width: 667px) {
+  .history .timepoit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .pl-lg-4 {
+    padding-left: 1.5rem !important;
+  }
+  .pl-lg-5 {
+    padding-left: 3rem !important;
+  }
+  .text-lg-right {
+    text-align: right;
+  }
 }

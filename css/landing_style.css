@@ -40,7 +40,7 @@
   padding: 12px 16px;
   margin-top: 20px;
 }
-.btn-style {
+.btn-send {
   float: right;
 }
 .btn-primary:hover {
@@ -80,4 +80,15 @@
   color: #149a46;
   text-decoration: underline;
   opacity: 0.8;
+}
+@media (max-width: 992px) {
+  .contact_view_content .info {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .contact_view_content .info .info_form .con_head {
+    grid-template-columns: 1fr;
+  }
 }
